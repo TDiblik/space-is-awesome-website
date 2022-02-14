@@ -1,0 +1,16 @@
+{
+  "name": "space-is-awesome-website",
+  "version": "1.0.0",
+  "description": "Yarn is only used to compile this website from sccs to css and host it to localhost",
+  "repository": "https://github.com/TDiblik/space-is-awesome-website",
+  "author": "Tomáš Diblík <dibla.tomas@post.cz>",
+  "license": "MIT",
+  "scripts": {
+    "start": "serve src/",
+    "css:compile": "sass --watch ./src/scss/index.scss ./src/public/css/index.css"
+  },
+  "devDependencies": {
+    "sass": "^1.49.7",
+    "serve": "^13.0.2"
+  }
+}
