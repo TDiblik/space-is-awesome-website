@@ -24,14 +24,15 @@ body {
   }
 }
 
-$show-background-image-delay: $background-animation-duration/4 * 3;
-$show-background-image-duration: $show-background-image-delay/2;
+$show-background-image-delay: calc($background-animation-duration/4) * 3;
+$show-background-image-duration: calc($show-background-image-delay/2);
 .background-image {
   width: 100vw;
   height: 100vh;
   background-image: url("../images/index-background-nebula-picture.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: 100% 100%;
   opacity: 0;
   animation: background-anim-show-image $show-background-image-duration
     ease-in-out 1 forwards;
@@ -76,7 +77,7 @@ $font-size-text-smallest-page: 3em;
     right: $padding-around;
     text-align: center;
     opacity: 0;
-    animation: show-space-is-awesome $show-background-image-duration linear 1
+    animation: opacity-zero-to-hundred $show-background-image-duration linear 1
       forwards;
     @media only screen and (max-width: 1800px) {
       top: 5%;
@@ -89,14 +90,6 @@ $font-size-text-smallest-page: 3em;
     }
     @media only screen and (max-width: 650px) {
       top: 25%;
-    }
-    @keyframes show-space-is-awesome {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
     }
   }
 
@@ -118,7 +111,68 @@ $font-size-text-smallest-page: 3em;
     }
   }
 
-  #lets .point:nth-child(1) {
-    color: red !important;
+  $show-bottom-text-anim-duration: 1s;
+  $show-points-anim-delay-between: 0.3s;
+  $show-lets-anim-delay: $show-bottom-text-anim-duration +
+    $show-points-anim-delay-between * 4;
+  $show-explore-it-anim-delay: $show-lets-anim-delay +
+    $show-bottom-text-anim-duration;
+  $show-together-anim-delay: $show-explore-it-anim-delay +
+    $show-bottom-text-anim-duration;
+
+  #lets .point {
+    opacity: 0;
+  }
+
+  @for $i from 1 through 3 {
+    #lets .point:nth-child(#{$i}) {
+      height: 50px;
+      width: 50px;
+      background-color: $white-color;
+      border-radius: 50%;
+      margin-right: 20px;
+      display: inline-block;
+
+      animation: opacity-zero-to-hundred
+        $show-bottom-text-anim-duration
+        linear
+        1
+        forwards;
+      animation-delay: $show-background-image-duration +
+        $show-points-anim-delay-between *
+        $i;
+    }
+  }
+
+  #lets-text {
+    opacity: 0;
+    animation: opacity-zero-to-hundred $show-bottom-text-anim-duration linear 1
+      forwards;
+    animation-delay: $show-background-image-duration + $show-lets-anim-delay;
+  }
+
+  #explore-it {
+    cursor: pointer;
+    opacity: 0;
+    animation: opacity-zero-to-hundred $show-bottom-text-anim-duration linear 1
+      forwards;
+    animation-delay: $show-background-image-duration +
+      $show-explore-it-anim-delay;
+  }
+
+  #together {
+    opacity: 0;
+    animation: opacity-zero-to-hundred $show-bottom-text-anim-duration linear 1
+      forwards;
+    animation-delay: $show-background-image-duration + $show-together-anim-delay;
+  }
+}
+
+@keyframes opacity-zero-to-hundred {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
