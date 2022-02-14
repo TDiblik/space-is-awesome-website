@@ -5,10 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./public/css/index.css" />
+    <script src="./public/js/index.js"></script>
     <title>Space is awesome</title>
   </head>
   <body>
+    <!-- Animation helpers -->
     <div class="background-image"></div>
+    <img
+      id="rocket-transition-element"
+      src="./public/images/rocket-wholerocket-only.svg"
+      alt="really cool rocket, I swear"
+    />
+
+    <!-- Content -->
     <div class="text-container">
       <span id="space-is-awesome">Space is awesome</span>
       <div id="bottom-text-holder">
@@ -18,7 +27,11 @@
           <span class="point"></span>
           <span id="lets-text">Let's</span>
         </span>
-        <span id="explore-it">explore it</span>
+        <span id="explore-it">
+          <span id="explore-it-inner" onclick="explore_it_onclick()">
+            explore it
+          </span>
+        </span>
         <span id="together">together</span>
       </div>
     </div>

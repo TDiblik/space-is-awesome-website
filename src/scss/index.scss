@@ -1,6 +1,6 @@
 @import "./global.scss";
 
-$background-animation-duration: 8s;
+$background-animation-duration: 2s; // TODO: Change back to 8
 body {
   overflow: hidden;
   margin: 0 !important;
@@ -43,7 +43,7 @@ $show-background-image-duration: calc($show-background-image-delay/2);
       opacity: 0;
     }
     100% {
-      opacity: 0.5;
+      opacity: 0.7;
     }
   }
 }
@@ -152,12 +152,38 @@ $font-size-text-smallest-page: 3em;
   }
 
   #explore-it {
-    cursor: pointer;
     opacity: 0;
+    font-weight: bold;
     animation: opacity-zero-to-hundred $show-bottom-text-anim-duration linear 1
       forwards;
     animation-delay: $show-background-image-duration +
       $show-explore-it-anim-delay;
+
+    #explore-it-inner {
+      cursor: pointer;
+
+      &::before {
+        content: "";
+        background: #61bdb6;
+        max-height: 0;
+        transition: max-height 0.15s ease-in;
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        z-index: -1;
+      }
+      &:hover {
+        &::before {
+          max-height: 90px;
+          transition: max-height 0.25s ease-out;
+        }
+      }
+    }
   }
 
   #together {
@@ -174,5 +200,27 @@ $font-size-text-smallest-page: 3em;
   }
   100% {
     opacity: 1;
+  }
+}
+
+$rocket-width: 20vw;
+$rocket-height: 40vh;
+$rocket-anim-duration: 2s; /* When changing rocket animation time, please change it in index.js on the setTimeout() function as well */
+#rocket-transition-element {
+  position: absolute;
+  top: 100vh;
+  left: 60vw - $rocket-width;
+  width: $rocket-width;
+  height: $rocket-height;
+  z-index: 999;
+
+  &.active {
+    animation: rocket-takeoff $rocket-anim-duration linear 1 forwards;
+
+    @keyframes rocket-takeoff {
+      100% {
+        top: 0vh - $rocket-height;
+      }
+    }
   }
 }
