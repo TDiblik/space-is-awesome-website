@@ -205,7 +205,13 @@ $font-size-text-smallest-page: 3em;
 
 $rocket-width: 20vw;
 $rocket-height: 40vh;
-$rocket-anim-duration: 2s; /* When changing rocket animation time, please change it in index.js on the setTimeout() function as well */
+/* 
+  When changing rocket animation time, please change it in index.js on the setTimeout() function as well (don't forget to count in the ground animation delay) 
+  You can get it by using this formula: longer-animation + $rocket-ground-anim-delay
+*/
+$rocket-anim-duration: 2s;
+$rocket-ground-anim-duration: 2s;
+$rocket-ground-animation-delay: 1s;
 #rocket-transition-element {
   position: absolute;
   top: 100vh;
@@ -220,6 +226,67 @@ $rocket-anim-duration: 2s; /* When changing rocket animation time, please change
     @keyframes rocket-takeoff {
       100% {
         top: 0vh - $rocket-height;
+      }
+    }
+  }
+}
+
+$height-ground-normal: 500vh;
+$height-ground-bigger: 750vh;
+#rocket-transition-ground {
+  position: absolute;
+  top: 100vh;
+  left: -25vw;
+  width: 150vw;
+  height: $height-ground-normal;
+  z-index: 999;
+
+  &.active {
+    animation: ground-rise $rocket-ground-anim-duration linear
+      $rocket-ground-animation-delay 1 forwards;
+
+    @keyframes ground-rise {
+      0% {
+        top: 100vh;
+        left: -25vw;
+        width: 150vw;
+        height: $height-ground-normal;
+      }
+      15% {
+        top: 0vh;
+        left: -25vw;
+        width: 150vw;
+        height: $height-ground-normal;
+      }
+      25% {
+        top: -30vh;
+        left: -25vw;
+        width: 150vw;
+        height: $height-ground-normal;
+      }
+      45% {
+        top: -90vh;
+        left: -25vw;
+        width: 150vw;
+        height: $height-ground-normal;
+      }
+      60% {
+        top: -150vh;
+        left: -50vw;
+        width: 220vw;
+        height: $height-ground-normal;
+      }
+      80% {
+        top: -350vh;
+        left: -350vw;
+        width: 800vw;
+        height: $height-ground-bigger;
+      }
+      100% {
+        top: -520vh;
+        left: -340vw;
+        width: 800vw;
+        height: $height-ground-bigger;
       }
     }
   }
