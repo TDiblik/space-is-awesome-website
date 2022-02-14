@@ -1,3 +1,124 @@
+@import "./global.scss";
+
+$background-animation-duration: 8s;
 body {
-  background-color: black;
+  overflow: hidden;
+  margin: 0 !important;
+  animation: background-anim-gradient $background-animation-duration linear 1
+    forwards;
+
+  $middle-step-color: #470f8f;
+  @keyframes background-anim-gradient {
+    0% {
+      background-color: white;
+    }
+    25% {
+      background-color: $middle-step-color;
+    }
+    75% {
+      background-color: $middle-step-color;
+    }
+    100% {
+      background-color: black;
+    }
+  }
+}
+
+$show-background-image-delay: $background-animation-duration/4 * 3;
+$show-background-image-duration: $show-background-image-delay/2;
+.background-image {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/index-background-nebula-picture.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0;
+  animation: background-anim-show-image $show-background-image-duration
+    ease-in-out 1 forwards;
+  animation-delay: $show-background-image-delay;
+
+  @keyframes background-anim-show-image {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+}
+
+$font-size-text: 9em;
+$font-size-text-small-page: 5em;
+$font-size-text-smallest-page: 3em;
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  margin-top: -50vh;
+  margin-left: -50vw;
+  color: $white-color;
+  font-size: $font-size-text;
+
+  @media only screen and (max-width: 1150px) {
+    font-size: $font-size-text-small-page;
+  }
+  @media only screen and (max-width: 650px) {
+    font-size: $font-size-text-smallest-page;
+  }
+
+  $padding-around: 7%;
+  #space-is-awesome {
+    position: absolute !important;
+    top: 15%;
+    left: $padding-around;
+    right: $padding-around;
+    text-align: center;
+    opacity: 0;
+    animation: show-space-is-awesome $show-background-image-duration linear 1
+      forwards;
+    @media only screen and (max-width: 1800px) {
+      top: 5%;
+    }
+    @media only screen and (max-width: 1150px) {
+      top: 25%;
+    }
+    @media only screen and (max-width: 1005px) {
+      top: 15%;
+    }
+    @media only screen and (max-width: 650px) {
+      top: 25%;
+    }
+    @keyframes show-space-is-awesome {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+
+  $padding-around-bottom-text: $padding-around + 3%;
+  #bottom-text-holder {
+    position: absolute !important;
+    top: 40%;
+    left: $padding-around-bottom-text;
+    right: $padding-around-bottom-text;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    & > span:nth-child(2) {
+      text-align: center;
+    }
+    & > span:nth-child(3) {
+      text-align: right;
+    }
+  }
+
+  #lets .point:nth-child(1) {
+    color: red !important;
+  }
 }

@@ -1,1 +1,14 @@
-@import "./global.scss";
+$white-color: #f8f9fa;
+
+@font-face {
+  font-family: "Astro space";
+  src: url("../fonts/Astro-Space-font.ttf") format("truetype");
+}
+
+* {
+  font-family: "Astro space";
+}
+
+.absolute {
+  position: absolute !important;
+}
