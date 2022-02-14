@@ -1,0 +1,5 @@
+@import "./rocket-animation.scss";
+
+#rocket-boost-vector {
+  animation: rocket-booster-animation 0.25s ease-in-out infinite alternate;
+}
