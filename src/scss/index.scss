@@ -7,7 +7,7 @@ body {
   animation: background-anim-gradient $background-animation-duration linear 1
     forwards;
 
-  $middle-step-color: #470f8f;
+  $middle-step-color: #1d0044;
   @keyframes background-anim-gradient {
     0% {
       background-color: white;
@@ -283,7 +283,7 @@ $height-ground-bigger: 750vh;
         height: $height-ground-bigger;
       }
       100% {
-        top: -520vh;
+        top: -540vh;
         left: -340vw;
         width: 800vw;
         height: $height-ground-bigger;

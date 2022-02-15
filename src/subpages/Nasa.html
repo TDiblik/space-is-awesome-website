@@ -5,7 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./../public/css/nasa.css" />
+    <script src="../public/js/subpages.js"></script>
     <title>Nasa astronomy picture of the day</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Animation helpers -->
+    <div class="background-image"></div>
+    <div class="menu-wrapper">
+      <div
+        id="menu-icon-identifier"
+        class="menu-icon"
+        onclick="MenuIconClick()"
+      >
+        <div class="line-1 no-animation"></div>
+        <div class="line-2 no-animation"></div>
+        <div class="line-3 no-animation"></div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="main-container"></div>
+  </body>
 </html>
