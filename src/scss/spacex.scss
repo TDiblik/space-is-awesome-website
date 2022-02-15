@@ -1,31 +1,39 @@
 @import "./subpages.scss";
 
 body {
-  overflow-y: hidden !important;
+  overflow: hidden !important;
 }
 
 $rocket-height: 60vh;
 #rocket {
   position: absolute;
-  top: 20vh;
+  top: 100vh;
   left: 20vw;
   width: 60vw;
   height: $rocket-height;
 
   &.active {
-    animation: rocket-takeoff $rocket-spacex-anim-duration linear 1 forwards;
+    animation: rocket-takeoff-new $rocket-spacex-anim-duration linear 1 forwards;
 
-    @keyframes rocket-takeoff {
+    @keyframes rocket-takeoff-new {
+      0% {
+        top: 100vh;
+      }
       100% {
-        top: 0vh - $rocket-height;
+        top: 20vh;
       }
     }
   }
 
   &.deactive {
-    animation: rocket-takeoff $rocket-spacex-anim-duration linear 1 forwards;
+    top: 20vh;
+    animation: rocket-takeoff-deactivate $rocket-spacex-anim-duration linear 1 #{$rocket-lines-anim-duration *
+      2} forwards;
 
-    @keyframes rocket-takeoff {
+    @keyframes rocket-takeoff-deactivate {
+      0% {
+        top: 20vh;
+      }
       100% {
         top: 0vh - $rocket-height;
       }
