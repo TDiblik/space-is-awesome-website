@@ -12,6 +12,7 @@
 
   &.active {
     & > * {
+      opacity: 0;
       animation: show_info $rocket-lines-anim-duration linear forwards
         $rocket-spacex-anim-duration + $rocket-lines-anim-duration;
     }
@@ -33,7 +34,7 @@
 
   &.deactive {
     & > * {
-      animation: show_info $rocket-lines-anim-duration reverse forwards
+      animation: show_info_back $rocket-lines-anim-duration linear forwards
         $rocket-lines-anim-duration;
     }
 
@@ -83,10 +84,24 @@
   }
 }
 
+@keyframes show_info_back {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 $rocket-flame-anim: 0.25;
 #rocket-whole.active {
   #rocket-boost-vector {
-    animation: rocket-booster-animation-spacex 0.25s ease-in-out 8 alternate;
+    animation: rocket-booster-animation-spacex 0.25s ease-in-out 8;
+  }
+}
+#rocket-whole.deactive {
+  #rocket-boost-vector {
+    animation: rocket-booster-animation-spacex 0.25s ease-in-out 8;
   }
 }
 

@@ -45,12 +45,20 @@
 
     <!-- Content -->
     <div class="main-container">
-      <object
-        id="rocket"
-        type="image/svg+xml"
-        data="../public/images/rocket-with-info.svg"
-        alt="Image of really cool rocket, I swear"
-      ></object>
+      <div class="content">
+        <h3 id="title">Select some spacex rocket</h3>
+        <select
+          id="select-rocket"
+          placeholder="Select some spacex rocket"
+          onchange="getDataFromSpaceX()"
+        ></select>
+      </div>
     </div>
+    <object
+      id="rocket-identifier"
+      type="image/svg+xml"
+      data="../public/images/rocket-with-info.svg"
+      alt="Image of really cool rocket, I swear"
+    ></object>
   </body>
 </html>
