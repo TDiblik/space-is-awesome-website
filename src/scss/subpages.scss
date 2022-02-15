@@ -71,7 +71,7 @@ $cubic-bezier-out: cubic-bezier(1, 0.7, 1, 0.3);
   position: absolute;
   top: $menu-top-position;
   left: 5%;
-  z-index: 999;
+  z-index: 99999;
   @extend .initial-animation;
 }
 
@@ -215,7 +215,7 @@ $astronaut-size: 70px;
   right: 20%;
   width: $astronaut-size;
   height: $astronaut-size;
-  z-index: 999;
+  z-index: 99999;
   animation: astronaut-flying 50s linear infinite;
 
   @keyframes astronaut-flying {
@@ -265,5 +265,30 @@ $astronaut-size: 70px;
       top: 2%;
       right: 13%;
     }
+  }
+}
+
+/* Menu */
+.menu {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 400px;
+  height: 700px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: #3faf82;
+  color: #fff;
+  z-index: 9999;
+
+  .center {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
   }
 }
