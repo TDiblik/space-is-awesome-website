@@ -30,4 +30,9 @@ function MenuIconClick() {
   }
 }
 
-function RedirectAnimation(url) {}
+function Redirect(url) {
+  document.body.classList.add("redirecting");
+  setTimeout(function () {
+    window.location.href = url;
+  }, 1100);
+}

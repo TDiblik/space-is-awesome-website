@@ -321,6 +321,14 @@ $menu-width: 500px;
       padding: 20px 0px;
       text-decoration: underline;
       cursor: pointer;
+
+      $hover-color: #1d0044;
+      &:hover {
+        color: $hover-color;
+      }
+      & > a:hover {
+        color: $hover-color;
+      }
     }
 
     & > span:nth-child(2) {
@@ -353,5 +361,19 @@ $background-blur-end: blur(10px);
   }
   100% {
     filter: $background-blur-end;
+  }
+}
+
+body.redirecting {
+  animation: anim-redirecting 1s linear 1 forwards;
+  @keyframes anim-redirecting {
+    0% {
+      background-color: black;
+      opacity: 1;
+    }
+    100% {
+      background-color: white;
+      opacity: 0;
+    }
   }
 }
