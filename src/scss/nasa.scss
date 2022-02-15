@@ -1,1 +1,35 @@
 @import "./subpages.scss";
+
+.main-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  margin-top: -50vh;
+  margin-left: -50vw;
+
+  .content {
+    position: absolute !important;
+    top: 20vh;
+    width: 100%;
+    display: flex !important;
+    flex-direction: column;
+
+    #title {
+      width: 100%;
+      text-align: center;
+    }
+
+    $margin-right-picture: 10%;
+    #picture-of-the-day {
+      margin: 0px $margin-right-picture;
+      @extend .initial-animation;
+    }
+
+    #picture-of-the-day-description {
+      margin: 10px $margin-right-picture;
+      @extend .initial-animation;
+    }
+  }
+}
