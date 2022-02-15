@@ -1,0 +1,84 @@
+@import "./global.scss";
+@import "./rocket-animation.scss";
+
+@mixin show-data-mixin(
+  $explanation_line_name,
+  $explanation_line_offset,
+  $explanation_point_name
+) {
+  & > * {
+    opacity: 0;
+  }
+
+  &.active {
+    & > * {
+      animation: show_info $rocket-lines-anim-duration linear forwards
+        $rocket-spacex-anim-duration + $rocket-lines-anim-duration;
+    }
+
+    ##{$explanation_line_name} {
+      opacity: 1;
+      stroke-dasharray: $explanation_line_offset;
+      stroke-dashoffset: $explanation_line_offset;
+      animation: dash $rocket-lines-anim-duration linear forwards
+        $rocket-spacex-anim-duration;
+    }
+
+    @if ($explanation_point_name) {
+      ##{$explanation_point_name} {
+        opacity: 1;
+      }
+    }
+  }
+
+  &.deactive {
+    & > * {
+      animation: show_info $rocket-lines-anim-duration reverse forwards
+        $rocket-lines-anim-duration;
+    }
+
+    ##{$explanation_line_name} {
+      opacity: 1;
+      stroke-dasharray: $explanation_line_offset;
+      stroke-dashoffset: 0;
+      animation: animation-dash-backward-#{$explanation_line_name} $rocket-lines-anim-duration
+        linear forwards;
+
+      @keyframes animation-dash-backward-#{$explanation_line_name} {
+        0% {
+          stroke-dashoffset: 0;
+        }
+        100% {
+          stroke-dashoffset: $explanation_line_offset;
+        }
+      }
+    }
+  }
+}
+
+#Basic-rocket-info {
+  @include show-data-mixin("_Basic_info_line", 707.8, null);
+}
+
+#Engines-rocket-info {
+  @include show-data-mixin("_Engines_info_line", 242, "_Engines_info_point");
+}
+
+#Payload-rocket-info {
+  @include show-data-mixin("_Payload_info_line", 96, "_Payload_info_point");
+}
+
+@keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes show_info {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

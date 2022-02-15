@@ -1,1 +1,34 @@
 @import "./subpages.scss";
+
+body {
+  overflow-y: hidden !important;
+}
+
+$rocket-height: 60vh;
+#rocket {
+  position: absolute;
+  top: 20vh;
+  left: 20vw;
+  width: 60vw;
+  height: $rocket-height;
+
+  &.active {
+    animation: rocket-takeoff $rocket-spacex-anim-duration linear 1 forwards;
+
+    @keyframes rocket-takeoff {
+      100% {
+        top: 0vh - $rocket-height;
+      }
+    }
+  }
+
+  &.deactive {
+    animation: rocket-takeoff $rocket-spacex-anim-duration linear 1 forwards;
+
+    @keyframes rocket-takeoff {
+      100% {
+        top: 0vh - $rocket-height;
+      }
+    }
+  }
+}

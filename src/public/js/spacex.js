@@ -1,1 +1,3 @@
-console.log("js is working!");
+window.onload = function () {
+  var rocket = document.getElementById("rocket");
+};

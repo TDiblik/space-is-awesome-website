@@ -1,0 +1,183 @@
+<?xml-stylesheet href="./../css/rocket-animations-spacex.css" type="text/css"?>
+<svg width="867" height="627" viewBox="0 0 867 627" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="rocket">
+<g id="rocket-whole">
+<g id="rocket-boost">
+<g id="rocket-boost-path">
+<path id="rocket-boost-vector" d="M392.281 400.062C323.568 400.062 305.316 469.343 336.451 534.835C337.525 534.835 350.409 489.432 350.409 489.432L404.091 626.654L445.963 504.107L463.141 544.369C463.141 544.369 508.234 400.062 392.281 400.062Z" fill="#FF765F"/>
+</g>
+</g>
+<g id="rocket-body">
+<g id="Group">
+<g id="Group_2">
+<path id="Vector" d="M317.257 271.822C228.032 361.046 263.999 382.481 317.257 481.378L347.61 413.366L317.257 271.822Z" fill="#EA3452"/>
+</g>
+</g>
+<g id="Group_3">
+<g id="Group_4">
+<path id="Vector_2" d="M473.749 271.822C562.973 361.046 527.007 382.481 473.749 481.378L443.395 413.366L473.749 271.822Z" fill="#EA3452"/>
+</g>
+</g>
+<g id="Group_5">
+<g id="Group_6">
+<path id="Vector_3" d="M473.747 481.378C490.43 450.399 505.414 427.021 515.388 406.779C494.442 409.079 464.575 400.182 460.642 332.935L443.395 413.366L473.747 481.378Z" fill="#AA2B46"/>
+</g>
+</g>
+<g id="Group_7">
+<g id="Group_8">
+<path id="Vector_4" d="M317.256 481.379L347.61 413.367L317.733 274.051C325.991 353.611 334.22 419.325 285.367 425.096C294.334 441.074 305.361 459.291 317.256 481.379Z" fill="#AA2B46"/>
+</g>
+</g>
+<g id="Group_9">
+<g id="Group_10">
+<path id="Vector_5" d="M481.91 170.323C478.722 77.1641 395.53 2 395.53 2C395.53 2 312.343 77.1641 309.155 170.323C305.967 263.482 347.61 413.366 347.61 413.366H443.455C443.455 413.366 485.099 263.482 481.91 170.323Z" fill="white"/>
+</g>
+</g>
+<g id="Group_11">
+<g id="Group_12">
+<path id="Vector_6" d="M353.226 51.6805C332.13 82.0807 310.739 123.972 309.153 170.323C305.965 263.482 347.608 413.366 347.608 413.366H443.454C443.454 413.366 445.86 404.693 449.471 390.251C354.756 408.309 295.923 306.892 353.226 51.6805Z" fill="#DAD4E1"/>
+</g>
+</g>
+<g id="Group_13">
+<g id="Group_14">
+<path id="Vector_7" d="M455.104 79.6126C429.72 32.8917 395.53 2.00151 395.53 2.00151C395.53 2.00151 361.344 32.8917 335.959 79.6126H455.104Z" fill="#EA3452"/>
+</g>
+</g>
+<g id="Group_15">
+<g id="Group_16">
+<path id="Vector_8" d="M335.959 79.6126H455.104C454.435 78.3861 453.76 77.1761 453.083 75.9721C406.912 80.2725 338.736 76.2532 395.53 2C395.53 2 361.342 32.8917 335.959 79.6126Z" fill="#AA2B46"/>
+</g>
+</g>
+<g id="Group_17">
+<g id="Group_18">
+<path id="Vector_9" d="M428.636 138.327C448.414 158.105 448.414 190.172 428.636 209.949C408.86 229.727 376.793 229.727 357.015 209.949C337.236 190.172 337.236 158.105 357.015 138.327C376.793 118.549 408.86 118.549 428.636 138.327Z" fill="#DFDEDC"/>
+</g>
+<g id="Group_19">
+<path id="Vector_10" d="M426.194 140.771C444.624 159.199 444.624 189.077 426.194 207.505C407.766 225.933 377.887 225.933 359.459 207.505C341.03 189.077 341.03 159.199 359.459 140.771C377.887 122.343 407.766 122.343 426.194 140.771Z" fill="#AA2B46"/>
+</g>
+<g id="Group_20">
+<path id="Vector_11" d="M424.091 142.875C441.357 160.141 441.357 188.135 424.091 205.401C406.825 222.667 378.83 222.667 361.562 205.401C344.296 188.135 344.296 160.141 361.562 142.875C378.83 125.609 406.825 125.609 424.091 142.875Z" fill="#EA3452"/>
+</g>
+<g id="Group_21">
+<path id="Vector_12" d="M419.253 147.711C433.848 162.306 433.848 185.971 419.253 200.566C404.657 215.161 380.993 215.161 366.398 200.566C351.802 185.971 351.802 162.306 366.398 147.711C380.993 133.115 404.657 133.115 419.253 147.711Z" fill="#38445F"/>
+</g>
+<g id="Group_22">
+<path id="Vector_13" d="M417.598 149.367C431.279 163.048 431.279 185.229 417.598 198.909C403.916 212.59 381.737 212.59 368.057 198.909C354.376 185.229 354.376 163.048 368.057 149.367C381.737 135.686 403.916 135.686 417.598 149.367Z" fill="#88BAE8"/>
+</g>
+<g id="Group_23">
+<path id="Vector_14" d="M368.055 198.909C376.15 207.003 387.214 210.268 397.739 208.785V139.492C387.214 138.008 376.15 141.274 368.055 149.369C367.752 149.671 367.492 149.998 367.202 150.309V197.967C367.492 198.278 367.752 198.606 368.055 198.909Z" fill="#BAE1FF"/>
+</g>
+<g id="Group_24">
+<path id="Vector_15" d="M406.35 141.832V206.444C409.159 205.27 411.836 203.704 414.322 201.767V146.513C411.836 144.575 409.159 143.007 406.35 141.832Z" fill="#BAE1FF"/>
+</g>
+</g>
+<g id="Group_25">
+<g id="Group_26">
+<path id="Vector_16" d="M342.181 85.4551C342.181 86.5644 341.282 87.4632 340.173 87.4632C339.063 87.4632 338.165 86.5644 338.165 85.4551C338.165 84.3458 339.063 83.4469 340.173 83.4469C341.282 83.4469 342.181 84.3458 342.181 85.4551Z" fill="#B3AFB5"/>
+</g>
+<g id="Group_27">
+<path id="Vector_17" d="M357.46 85.4537C357.46 86.563 356.561 87.4618 355.452 87.4618C354.343 87.4618 353.444 86.563 353.444 85.4537C353.444 84.3444 354.343 83.447 355.452 83.4455C356.561 83.447 357.46 84.3444 357.46 85.4537Z" fill="#B3AFB5"/>
+</g>
+<g id="Group_28">
+<path id="Vector_18" d="M372.739 85.4552C372.739 86.5645 371.84 87.4633 370.731 87.4633C369.622 87.4633 368.723 86.5645 368.723 85.4552C368.723 84.3459 369.622 83.447 370.731 83.447C371.84 83.447 372.739 84.3459 372.739 85.4552Z" fill="#B3AFB5"/>
+</g>
+<g id="Group_29">
+<path id="Vector_19" d="M388.02 85.4552C388.02 86.5645 387.121 87.4633 386.012 87.4633C384.902 87.4618 384.003 86.5645 384.003 85.4552C384.003 84.3459 384.902 83.447 386.012 83.447C387.121 83.447 388.02 84.3459 388.02 85.4552Z" fill="#B3AFB5"/>
+</g>
+<g id="Group_30">
+<path id="Vector_20" d="M403.3 85.4537C403.3 86.563 402.4 87.4618 401.292 87.4618C400.183 87.4618 399.284 86.563 399.284 85.4537C399.284 84.3444 400.183 83.4455 401.292 83.4455C402.4 83.4455 403.3 84.3444 403.3 85.4537Z" fill="#B3AFB5"/>
+</g>
+<g id="Group_31">
+<path id="Vector_21" d="M418.579 85.4552C418.579 86.5645 417.68 87.4633 416.571 87.4633C415.463 87.4633 414.563 86.5645 414.563 85.4552C414.563 84.3459 415.463 83.447 416.571 83.447C417.68 83.447 418.579 84.3459 418.579 85.4552Z" fill="#B3AFB5"/>
+</g>
+<g id="Group_32">
+<path id="Vector_22" d="M433.858 85.4537C433.858 86.563 432.959 87.4633 431.85 87.4633C430.742 87.4633 429.842 86.563 429.842 85.4537C429.842 84.3459 430.742 83.447 431.85 83.447C432.959 83.447 433.858 84.3444 433.858 85.4537Z" fill="#B3AFB5"/>
+</g>
+<g id="Group_33">
+<path id="Vector_23" d="M449.138 85.4537C449.138 86.563 448.238 87.4618 447.13 87.4618C446.021 87.4618 445.122 86.563 445.122 85.4537C445.122 84.3444 446.021 83.4455 447.13 83.4455C448.238 83.4455 449.138 84.3444 449.138 85.4537Z" fill="#B3AFB5"/>
+</g>
+</g>
+<g id="Group_34">
+<g id="Group_35">
+<path id="Vector_24" d="M355.668 407.449C355.668 408.673 354.673 409.668 353.449 409.668C352.224 409.668 351.232 408.673 351.232 407.449C351.231 406.224 352.224 405.231 353.449 405.231C354.673 405.231 355.668 406.224 355.668 407.449Z" fill="#B3AFB5"/>
+</g>
+<g id="Group_36">
+<path id="Vector_25" d="M372.539 407.449C372.539 408.673 371.544 409.668 370.319 409.668C369.095 409.668 368.102 408.673 368.102 407.449C368.102 406.224 369.095 405.231 370.32 405.231C371.544 405.231 372.539 406.224 372.539 407.449Z" fill="#B3AFB5"/>
+</g>
+<g id="Group_37">
+<path id="Vector_26" d="M389.411 407.449C389.411 408.673 388.416 409.668 387.191 409.668C385.968 409.668 384.974 408.673 384.974 407.449C384.974 406.224 385.968 405.231 387.191 405.231C388.416 405.231 389.411 406.224 389.411 407.449Z" fill="#B3AFB5"/>
+</g>
+<g id="Group_38">
+<path id="Vector_27" d="M406.281 407.449C406.281 408.673 405.289 409.668 404.064 409.668C402.839 409.668 401.847 408.673 401.847 407.449C401.847 406.224 402.839 405.231 404.064 405.231C405.289 405.231 406.281 406.224 406.281 407.449Z" fill="#B3AFB5"/>
+</g>
+<g id="Group_39">
+<path id="Vector_28" d="M423.153 407.449C423.153 408.673 422.161 409.668 420.936 409.668C419.711 409.668 418.719 408.673 418.719 407.449C418.719 406.224 419.711 405.231 420.936 405.231C422.161 405.231 423.153 406.224 423.153 407.449Z" fill="#B3AFB5"/>
+</g>
+<g id="Group_40">
+<path id="Vector_29" d="M440.025 407.449C440.025 408.673 439.033 409.668 437.808 409.668C436.583 409.668 435.591 408.673 435.591 407.449C435.591 406.224 436.583 405.231 437.808 405.231C439.033 405.231 440.025 406.224 440.025 407.449Z" fill="#B3AFB5"/>
+</g>
+</g>
+<g id="Group_41">
+<g id="Group_42">
+<path id="Vector_30" d="M395.532 266.206V481.378C395.532 481.378 384.634 420.403 384.634 344.62C384.634 268.836 395.532 266.206 395.532 266.206Z" fill="#EA3452"/>
+</g>
+<g id="Group_43">
+<path id="Vector_31" d="M395.53 266.206V481.378C395.53 481.378 406.431 420.403 406.431 344.62C406.431 268.837 395.53 266.206 395.53 266.206Z" fill="#AA2B46"/>
+</g>
+</g>
+</g>
+</g>
+<g id="Basic-rocket-info">
+<rect id="BasicInfoBox" x="594" y="110" width="273" height="248" rx="14.4512" fill="white"/>
+<text id="_Rockt_Cost_Per_Launch:" fill="black" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="12.8837" letter-spacing="0.09em"><tspan x="602" y="343.381">Cost per launch: </tspan></text>
+<text id="_Rocket_First_Flight" fill="#494949" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="10.7364" letter-spacing="0.09em"><tspan x="723" y="324.735">Lorem ipsum</tspan></text>
+<text id="_Rocket_Cost_Per_Launch" fill="#494949" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="10.7364" letter-spacing="0.09em"><tspan x="762" y="342.735">Lorem ipsum</tspan></text>
+<text id="First flight:" fill="black" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="12.8837" letter-spacing="0.09em"><tspan x="602" y="326.381">First flight: </tspan></text>
+<text id="_Rocket_Diameter" fill="#494949" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="10.7364" letter-spacing="0.09em"><tspan x="702" y="306.735">Lorem ipsum</tspan></text>
+<text id="Diameter:" fill="black" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="12.8837" letter-spacing="0.09em"><tspan x="602" y="306.381">Diameter:  </tspan></text>
+<text id="_Rocket_Height" fill="#494949" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="10.7364" letter-spacing="0.09em"><tspan x="702" y="287.735">Lorem ipsum</tspan></text>
+<text id="Height: " fill="black" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="12.8837" letter-spacing="0.09em"><tspan x="602" y="287.381">Height: </tspan></text>
+<text id="_Rocket_Mass" fill="#494949" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="10.7364" letter-spacing="0.09em"><tspan x="702" y="268.735">Lorem ipsum</tspan></text>
+<text id="Mass:" fill="black" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="12.8837" letter-spacing="0.09em"><tspan x="602" y="268.381">Mass: </tspan></text>
+<text id="_Rocket_description" fill="#494949" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="12.8837" letter-spacing="0.09em"><tspan x="602" y="153.381">$Rocket description</tspan></text>
+<text id="_Rocket_name" fill="black" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="20.234" letter-spacing="0.09em"><tspan x="602" y="135.096">$Rocket name</tspan></text>
+<path id="_Basic_info_line" d="M395.058 2H543.758L587.777 229.612L543.758 480.845H471.5" stroke="white" stroke-width="2.14729"/>
+</g>
+<g id="Engines-rocket-info">
+<rect id="_Engines_background" y="269" width="227" height="149" rx="14.4512" fill="white"/>
+<text id="_Engines_thrust_to_weight" fill="#494949" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="10" letter-spacing="0em"><tspan x="147" y="406.013">Lorem ipsum</tspan></text>
+<text id="Thrust to weight:" fill="black" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="12.8837" letter-spacing="0em"><tspan x="6" y="406.381">Thrust to weight: </tspan></text>
+<text id="_Engines_layout" fill="#494949" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="10.7364" letter-spacing="0em"><tspan x="72" y="386.735">Lorem ipsum</tspan></text>
+<text id="Layout:" fill="black" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="12.8837" letter-spacing="0em"><tspan x="6" y="388.381">Layout: </tspan></text>
+<text id="_Engines_max_loss_engine" fill="#494949" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="10" letter-spacing="0em"><tspan x="144" y="369.013">Lorem ipsum</tspan></text>
+<text id="Max loss engine:" fill="black" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="12.8837" letter-spacing="0em"><tspan x="6" y="370.381">Max loss engine:</tspan></text>
+<text id="_Engines_number" fill="#494949" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="10.7364" letter-spacing="0em"><tspan x="79" y="350.735">Lorem ipsum</tspan></text>
+<text id="Number:" fill="black" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="12.8837" letter-spacing="0em"><tspan x="6" y="351.381">Number:</tspan></text>
+<text id="_Engines_version" fill="#494949" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="10.7364" letter-spacing="0em"><tspan x="79" y="331.735">Lorem ipsum</tspan></text>
+<text id="Version:" fill="black" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="12.8837" letter-spacing="0em"><tspan x="6" y="332.381">Version:</tspan></text>
+<text id="_Engines_type" fill="#494949" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="10.7364" letter-spacing="0em"><tspan x="52" y="312.735">Lorem ipsum</tspan></text>
+<text id="Type:" fill="black" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="12.8837" letter-spacing="0em"><tspan x="6" y="313.381">Type:</tspan></text>
+<text id="Engines" fill="black" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="20.234" letter-spacing="0em"><tspan x="6" y="294.096">Engines</tspan></text>
+<path id="_Engines_info_line" d="M226 341.846H251.661V419.846H385V414.846" stroke="white" stroke-width="2"/>
+<circle id="_Engines_info_point" cx="385" cy="413.346" r="3.5" fill="black"/>
+</g>
+<g id="Payload-rocket-info">
+<rect id="_Payload_background" x="4" y="72" width="223" height="159" rx="14.4512" fill="white"/>
+<text id="_Payload_mass_1" fill="#494949" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="10.7364" letter-spacing="0em"><tspan x="88" y="137.735">Lorem ipsum</tspan></text>
+<text id="Weight:" fill="black" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="12.8837" letter-spacing="0em"><tspan x="13" y="137.381">Weight:</tspan></text>
+<text id="_Payload_id_1" fill="#494949" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="10.7364" letter-spacing="0em"><tspan x="88" y="120.735">Lorem ipsum</tspan></text>
+<text id="Name:" fill="black" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="12.8837" letter-spacing="0em"><tspan x="13" y="120.381">Name:</tspan></text>
+<text id="_Payload_mass_2" fill="#494949" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="10.7364" letter-spacing="0em"><tspan x="88" y="178.735">Lorem ipsum</tspan></text>
+<text id="Weight:_2" fill="black" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="12.8837" letter-spacing="0em"><tspan x="13" y="178.381">Weight:</tspan></text>
+<text id="_Payload_id_2" fill="#494949" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="10.7364" letter-spacing="0em"><tspan x="88" y="159.735">Lorem ipsum</tspan></text>
+<text id="Name:_2" fill="black" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="12.8837" letter-spacing="0em"><tspan x="13" y="159.381">Name:</tspan></text>
+<text id="_Payload_mass_3" fill="#494949" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="10.7364" letter-spacing="0em"><tspan x="88" y="221.735">Lorem ipsum</tspan></text>
+<text id="Weight:_3" fill="black" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="12.8837" letter-spacing="0em"><tspan x="13" y="221.381">Weight:</tspan></text>
+<text id="_Payload_id_3" fill="#494949" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="10.7364" letter-spacing="0em"><tspan x="88" y="202.735">Lorem ipsum</tspan></text>
+<text id="Name:_3" fill="black" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="12.8837" letter-spacing="0em"><tspan x="13" y="203.381">Name:</tspan></text>
+<text id="Payload" fill="black" xml:space="preserve" style="white-space: pre" font-family="a Astro Space" font-size="20.234" letter-spacing="0em"><tspan x="13" y="98.0959">Payload</tspan></text>
+<path id="_Payload_info_line" d="M322 148.846H226" stroke="white" stroke-width="2"/>
+<circle id="_Payload_info_point" cx="320.5" cy="148.846" r="3.5" fill="black"/>
+</g>
+</g>
+</svg>
