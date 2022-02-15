@@ -4,8 +4,8 @@ $show-background-duration: 1s;
 body {
   overflow: hidden;
   background-color: white;
-  animation: show-background-anim $show-background-duration ease-in-out 1
-    forwards;
+  animation: show-background-anim calc($show-background-duration/2) ease-in-out
+    1 forwards;
 
   @keyframes show-background-anim {
     from {
@@ -56,6 +56,8 @@ body {
   }
 }
 
+$menu-top-position: 8%;
+
 /* --------------- Starting stolen code from here: https://codepen.io/roydigerhund/pen/ZQmbNm --------------- */
 $menu-icon-line-height: 5px;
 $menu-icon-line-space: 11px;
@@ -64,9 +66,10 @@ $menu-icon-height: (3 * $menu-icon-line-height) + (2 * $menu-icon-line-space);
 $cubic-bezier-in: cubic-bezier(0.3, 1, 0.7, 1);
 $cubic-bezier-out: cubic-bezier(1, 0.7, 1, 0.3);
 
+/* This menu-wrapper class was added by me */
 .menu-wrapper {
   position: absolute;
-  top: 8%;
+  top: $menu-top-position;
   left: 5%;
   z-index: 999;
   @extend .initial-animation;
@@ -200,3 +203,67 @@ $cubic-bezier-out: cubic-bezier(1, 0.7, 1, 0.3);
   }
 }
 /* --------------- Ending stolen code --------------- */
+
+.astronaut-wrapper {
+  @extend .initial-animation;
+}
+
+$astronaut-size: 70px;
+.astronaut {
+  position: absolute;
+  top: 5%;
+  right: 20%;
+  width: $astronaut-size;
+  height: $astronaut-size;
+  z-index: 999;
+  animation: astronaut-flying 50s linear infinite;
+
+  @keyframes astronaut-flying {
+    0% {
+      top: 2%;
+      right: 13%;
+      transform: rotate(10deg);
+    }
+    10% {
+      transform: rotate(60deg);
+    }
+    20% {
+      top: 5%;
+      right: 5%;
+      transform: rotate(90deg);
+    }
+    30% {
+      transform: rotate(180deg);
+    }
+    40% {
+      top: 15%;
+      right: 9%;
+      transform: rotate(250deg);
+    }
+    50% {
+      transform: rotate(350deg);
+    }
+    60% {
+      top: 10%;
+      right: 15%;
+      transform: rotate(420deg);
+    }
+    70% {
+      transform: rotate(600deg);
+    }
+    80% {
+      top: 15%;
+      right: 35%;
+      transform: rotate(690deg);
+    }
+    90% {
+      top: 5%;
+      right: 20%;
+      transform: rotate(800deg);
+    }
+    100% {
+      top: 2%;
+      right: 13%;
+    }
+  }
+}
