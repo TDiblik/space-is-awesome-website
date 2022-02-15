@@ -17,9 +17,10 @@ body {
   }
 }
 
+$background-image-height: 200vh;
 .background-image {
   width: 200vw;
-  height: 200vh;
+  height: $background-image-height;
   background-image: url("../images/background-generic-subpages.svg");
   background-repeat: repeat;
   background-attachment: fixed;
@@ -269,26 +270,88 @@ $astronaut-size: 70px;
 }
 
 /* Menu */
+$menu-show-animation-time: 1s;
+$menu-width: 500px;
 .menu {
   position: absolute;
   top: 30%;
   left: 50%;
-  width: 400px;
-  height: 700px;
+  width: $menu-width;
+  height: 400px;
   margin-top: -200px;
-  margin-left: -200px;
-  border-radius: 2px;
-  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
-  background: #3faf82;
-  color: #fff;
+  margin-left: -250px;
+  border-radius: 20px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 3);
+  background-image: linear-gradient(to bottom, #1d0044, rgb(149, 0, 255));
   z-index: 9999;
+  visibility: hidden;
+  opacity: 0;
+
+  &.active {
+    animation: show-menu $menu-show-animation-time linear 1 forwards;
+    @keyframes show-menu {
+      from {
+        opacity: 0;
+        visibility: visible;
+      }
+      to {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
 
   .center {
     position: absolute;
-    top: 20%;
+    width: $menu-width;
+    text-align: center;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
+
+    & > span:nth-child(1) {
+      font-size: 40px;
+      color: rgb(232, 52, 12);
+    }
+
+    .sencond-layout {
+      font-size: 25px;
+      padding: 20px 0px;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    & > span:nth-child(2) {
+      padding: 40px 0px 20px 0px;
+      @extend .sencond-layout;
+    }
+    @for $i from 3 through 4 {
+      & > span:nth-child(#{$i}) {
+        @extend .sencond-layout;
+      }
+    }
+  }
+}
+
+$background-blur-start: blur(0px);
+$background-blur-end: blur(10px);
+.blur {
+  opacity: 1;
+  animation: blur-animation $menu-show-animation-time linear 1 forwards;
+}
+
+.closing-anim {
+  opacity: 1;
+  animation: blur-animation $menu-show-animation-time reverse 1 forwards;
+}
+
+@keyframes blur-animation {
+  0% {
+    filter: $background-blur-start;
+  }
+  100% {
+    filter: $background-blur-end;
   }
 }
