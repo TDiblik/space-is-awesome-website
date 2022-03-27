@@ -19,9 +19,10 @@ body {
 
 $background-image-height: 200vh;
 .background-image {
-  width: 200vw;
+  width: 100vw;
   height: $background-image-height;
-  background-image: url("../images/background-generic-subpages.svg");
+  background-image: url("../images/background-generic-subpages.png");
+  image-rendering: pixelated;
   background-repeat: repeat;
   background-attachment: fixed;
   opacity: 0;
