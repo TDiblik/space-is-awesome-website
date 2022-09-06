@@ -13,7 +13,6 @@ server {
 
         index index.html;
         location / {
-                default_type "text/html";
                 try_files $uri $uri.html $uri/ =404;
         }
 }
