@@ -13,6 +13,7 @@ server {
 
         index index.html;
         location / {
+                expires 90d; # Agressivelly cache everything, as it will probably never change
                 try_files $uri $uri.html $uri/ =404;
         }
 }
