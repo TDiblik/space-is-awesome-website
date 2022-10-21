@@ -8,4 +8,4 @@ Here's link: https://space-is-awesome.tomasdiblik.cz/
 
 # Also, also
 
-This project is literally something I made in 2 days. It has problems on mobile phones and there are some glithes in the 'spacex rockets' sections. I know about them, and I could fix it, however I feel like working on this is meaningless, since the assigment is already graded and it's "good enought" xd. Also, there is probably like 2 people who will ever see that site, soooo, idc. Btw, as you can see from source code, I'm hosting it on Azure, using Azure static web app, cuz it's free for like milion page requests per month per page!
+This project is literally something I made in 2 days. It has problems on mobile phones and there are some glitches in the 'spacex rockets' sections. I know about them, and I could fix it, however I feel like working on this is meaningless, since the assigment is already graded and it's "good enought" xd. Also, there are probably like 2 people who will ever see that site, soooo, idc.
