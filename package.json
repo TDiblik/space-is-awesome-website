@@ -8,7 +8,7 @@
   "scripts": {
     "start": "serve src/",
     "css:compile": "sass --watch $npm_package_config_scss_files",
-    "css:compile:cli": "sass $npm_package_config_scss_files"
+    "css:compile:cli": "sass $npm_package_config_scss_files --no-source-map"
   },
   "config": {
     "scss_files": "./src/scss/index.scss:./src/public/css/index.css ./src/scss/rocket-animations-index.scss:./src/public/css/rocket-animations-index.css ./src/scss/nasa.scss:./src/public/css/nasa.css ./src/scss/spacex.scss:./src/public/css/spacex.css ./src/scss/rocket-animations-spacex.scss:./src/public/css/rocket-animations-spacex.css"
