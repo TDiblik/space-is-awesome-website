@@ -1,19 +1,11 @@
 server {
-        listen 443 ssl;
-        listen [::]:443 ssl;
-
-        server_name space-is-awesome.tomasdiblik.cz;
-
-        ssl_certificate /etc/letsencrypt/live/space-is-awesome.tomasdiblik.cz/fullchain.pem;
-        ssl_certificate_key /etc/letsencrypt/live/space-is-awesome.tomasdiblik.cz/privkey.pem;
-        include /etc/letsencrypt/options-ssl-nginx.conf;
-        ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
-
-        root /www/space-is-awesome;
-
-        index index.html;
-        location / {
-                expires 90d; # Agressivelly cache everything, as it will probably never change
-                try_files $uri $uri.html $uri/ =404;
-        }
+    listen 21296;
+    
+    root /app/space-is-awesome;
+    
+    index index.html;
+    location / {
+        expires 90d; # Agressivelly cache everything, as it will probably never change
+        try_files $uri $uri.html $uri/ =404;
+    }
 }

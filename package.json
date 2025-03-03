@@ -6,7 +6,7 @@
   "author": "Tomáš Diblík <dibla.tomas@post.cz>",
   "license": "MIT",
   "scripts": {
-    "start": "serve src/",
+    "dev": "serve src/",
     "css:compile": "sass --watch $npm_package_config_scss_files",
     "css:compile:cli": "sass $npm_package_config_scss_files --no-source-map"
   },
