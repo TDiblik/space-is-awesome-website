@@ -1,11 +1,7 @@
-@import "./global.scss";
-@import "./rocket-animation.scss";
+@use "global.scss";
+@use "rocket-animation.scss";
 
-@mixin show-data-mixin(
-  $explanation_line_name,
-  $explanation_line_offset,
-  $explanation_point_name
-) {
+@mixin show-data-mixin($explanation_line_name, $explanation_line_offset, $explanation_point_name) {
   & > * {
     opacity: 0;
   }
@@ -13,16 +9,15 @@
   &.active {
     & > * {
       opacity: 0;
-      animation: show_info $rocket-lines-anim-duration linear forwards
-        $rocket-spacex-anim-duration + $rocket-lines-anim-duration;
+      animation: show_info global.$rocket-lines-anim-duration linear forwards global.$rocket-spacex-anim-duration +
+        global.$rocket-lines-anim-duration;
     }
 
     ##{$explanation_line_name} {
       opacity: 1;
       stroke-dasharray: $explanation_line_offset;
       stroke-dashoffset: $explanation_line_offset;
-      animation: dash $rocket-lines-anim-duration linear forwards
-        $rocket-spacex-anim-duration;
+      animation: dash global.$rocket-lines-anim-duration linear forwards global.$rocket-spacex-anim-duration;
     }
 
     @if ($explanation_point_name) {
@@ -34,16 +29,14 @@
 
   &.deactive {
     & > * {
-      animation: show_info_back $rocket-lines-anim-duration linear forwards
-        $rocket-lines-anim-duration;
+      animation: show_info_back global.$rocket-lines-anim-duration linear forwards global.$rocket-lines-anim-duration;
     }
 
     ##{$explanation_line_name} {
       opacity: 1;
       stroke-dasharray: $explanation_line_offset;
       stroke-dashoffset: 0;
-      animation: animation-dash-backward-#{$explanation_line_name} $rocket-lines-anim-duration
-        linear forwards;
+      animation: animation-dash-backward-#{$explanation_line_name} global.$rocket-lines-anim-duration linear forwards;
 
       @keyframes animation-dash-backward-#{$explanation_line_name} {
         0% {

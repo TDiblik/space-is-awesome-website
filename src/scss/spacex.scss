@@ -1,4 +1,5 @@
-@import "./subpages.scss";
+@use "global.scss";
+@use "subpages.scss";
 
 body {
   overflow: hidden !important;
@@ -47,7 +48,7 @@ $rocket-height: 60vh;
   height: $rocket-height;
 
   &.active {
-    animation: rocket-takeoff-new $rocket-spacex-anim-duration linear 1 forwards;
+    animation: rocket-takeoff-new global.$rocket-spacex-anim-duration linear 1 forwards;
 
     @keyframes rocket-takeoff-new {
       0% {
@@ -61,7 +62,7 @@ $rocket-height: 60vh;
 
   &.deactive {
     top: 20vh;
-    animation: rocket-takeoff-deactivate $rocket-spacex-anim-duration linear 1 #{$rocket-lines-anim-duration *
+    animation: rocket-takeoff-deactivate global.$rocket-spacex-anim-duration linear 1 #{global.$rocket-lines-anim-duration *
       2} forwards;
 
     @keyframes rocket-takeoff-deactivate {

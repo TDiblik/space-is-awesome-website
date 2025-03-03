@@ -1,4 +1,4 @@
-@import "./global.scss";
+@use "global.scss";
 
 $background-animation-duration: 8s;
 body {
@@ -127,7 +127,7 @@ $font-size-text-smallest-page: 3em;
     #lets .point:nth-child(#{$i}) {
       height: 50px;
       width: 50px;
-      background-color: $white-color;
+      background-color: global.$white-color;
       border-radius: 50%;
       margin-right: 20px;
       display: inline-block;
